@@ -12,10 +12,9 @@
     },
     "homepage": "https://collboard.com/#!!Link to Collboard store",
     "private": false,
-    "main": "./src/sampleButtonModule.tsx",
+    "main": "./src/_index.tsx",
     "scripts": {
         "start": "colldev",
-        "post version": "npm run publish",
         "publish": "colldev publish"
     },
     "dependencies": {
