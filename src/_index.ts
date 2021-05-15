@@ -1,3 +1,3 @@
 import './art';
-import './attribute';
+import './attribute.tsx';
 import './tool';

@@ -1,11 +1,17 @@
+import { declareModule, IconColor, makeAttributeModule } from '@collboard/modules-sdk';
 import * as React from 'react';
-import { IconColor } from '../30-components/menu/Icon';
-import { Authors } from '../50-systems/ModuleStore/Authors';
-import { internalModules } from '../50-systems/ModuleStore/internalModules';
-import { makeAttributeModule } from '../50-systems/ModuleStore/makers/makeAttributeModule';
-import { DRAWING_COLORS } from '../config';
 
-internalModules.declareModule(
+export const DRAWING_COLORS: { [key: string]: string } = {
+    black: '#000000',
+    blue: '#3167A4',
+    red: '#EE2333',
+    green: '#40B93C',
+    orange: '#F36717',
+    yellow: '#EDF050',
+    white: '#FFFFFF',
+};
+
+declareModule(
     makeAttributeModule<string>({
         manifest: {
             // Note: This art module is not auto-activated on initialization because when it appears on the board or in some toolbar, it will be auto-activated afterward.
@@ -17,13 +23,13 @@ internalModules.declareModule(
             screenshots: [
                 /*TODO:*/
             ],
-            contributors: [Authors.rosecky, Authors.hejny],
             categories: ['Colors'],
+            // TODO: !!! Authors should be derived from package.json
         },
         standard: true,
         attribute: {
             type: 'string',
-            name: 'color',
+            name: 'fillcolor',
             defaultValue: DRAWING_COLORS.black,
             // TODO: pattern:
         },

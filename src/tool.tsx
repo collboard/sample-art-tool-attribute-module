@@ -1,19 +1,12 @@
+import { declareModule, makeIconModuleOnModule, Registration, Separator, ToolbarName } from '@collboard/modules-sdk';
 import * as React from 'react';
 import { TouchFrame } from 'touchcontroller';
-import { Separator } from '../30-components/menu/Separator';
-import { Registration } from '../40-utils/destroyables/Registration';
-import { Authors } from '../50-systems/ModuleStore/Authors';
-import { internalModules } from '../50-systems/ModuleStore/internalModules';
-import { makeIconModuleOnModule } from '../50-systems/ModuleStore/makers/makeIconModuleOnModule';
-import { ToolbarName } from '../50-systems/ToolbarSystem/0-ToolbarSystem';
-import { FreehandArt } from '../71-arts/50-FreehandArt';
+import { SampleArt } from './art';
 
-// TODO: !!! makeIconModuleOnModule better name
-
-internalModules.declareModule(
+declareModule(
     makeIconModuleOnModule({
         manifest: {
-            name: 'FreehandTool',
+            name: 'SampleTool',
             title: { en: 'Drawing', cs: 'Kreslení' },
             // Note: for basic modules omitting the description: { en: '', cs: '' },
             keywords: [],
@@ -22,21 +15,23 @@ internalModules.declareModule(
             screenshots: [
                 /*TODO:*/
             ],
-            author: Authors.collboard,
+            // TODO: !!! Derive all from package
+            // TODO: !!! Authors should be derived from package.json
         },
         toolbar: ToolbarName.Tools,
         icon: ({ attributesSystem }) => ({
-            name: 'freehand' /* For triggering externally */,
             autoSelect: true,
-            order: 10,
+            order: 100,
             section: 0,
-            icon: 'pen',
+            char: '⭐',
             boardCursor: 'crosshair',
             menu: () => (
                 <>
                     {attributesSystem.inputRender('weight')}
                     <Separator />
                     {attributesSystem.inputRender('color')}
+                    <Separator />
+                    {attributesSystem.inputRender('fillcolor')}
                 </>
             ),
         }),
@@ -46,9 +41,10 @@ internalModules.declareModule(
                     touchController.touches.subscribe((touch) => {
                         appState.cancelSelection();
 
-                        const artInProcess = new FreehandArt(
+                        const artInProcess = new SampleArt(
                             [],
                             attributesSystem.getAttributeValue('color') as string,
+                            attributesSystem.getAttributeValue('fillcolor') as string,
                             attributesSystem.getAttributeValue('weight') as number,
                         );
 
@@ -58,7 +54,7 @@ internalModules.declareModule(
                         registerAdditionalSubscription(
                             touch.frames.subscribe(
                                 (touchFrame) => {
-                                    const frame = touchFrameToFreehandArtFrame(touchFrame);
+                                    const frame = touchFrameToSampleArtFrame(touchFrame);
                                     frame.position = collSpace.pickPoint(frame.position).point;
 
                                     artInProcess.frames.push(frame);
@@ -80,7 +76,7 @@ internalModules.declareModule(
 /**
  * TODO: Is this util usefull?
  */
-function touchFrameToFreehandArtFrame(
+function touchFrameToSampleArtFrame(
     frame: TouchFrame /* TODO: bit hack because TC does not export TouchFrame*/,
 ): TouchFrame /*Pick<TouchFrame, 'position' | 'time'>*/ {
     return frame;

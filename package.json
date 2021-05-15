@@ -12,12 +12,12 @@
     },
     "homepage": "https://collboard.com/#!!Link to Collboard store",
     "private": false,
-    "main": "./src/_index.tsx",
+    "main": "./src/_index.ts",
     "scripts": {
-        "start": "colldev",
+        "start": "colldev ",
         "publish": "colldev publish"
     },
     "dependencies": {
-        "@collboard/modules-sdk": "^10.4.1-6"
+        "@collboard/modules-sdk": "^11.1.0-21"
     }
 }

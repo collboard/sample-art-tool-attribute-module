@@ -1,39 +1,27 @@
+import { Abstract2dArt, classNames, declareModule, makeArtModule } from '@collboard/modules-sdk';
 import * as React from 'react';
 import { TouchFrame } from 'touchcontroller';
 import { IVector, Vector } from 'xyzt';
-import { classNames } from '../40-utils/classNames';
-import { internalModules } from '../50-systems/ModuleStore/internalModules';
-import { makeArtModule } from '../50-systems/ModuleStore/makers/makeArtModule';
-import { IS_NEAR_DISTANCE } from './25-AbstractPlacedArt';
-import { Abstract2dArt } from './26-Abstract2dArt';
 
-internalModules.declareModule(() =>
-    makeArtModule({
-        name: 'Freehand',
-        class: FreehandArt,
-    }),
-);
-
-// TODO: Make id dynamic according to maximal height of the Freehand line
 export const SVG_PADDING = 10;
+export const IS_NEAR_DISTANCE = 20;
 
-/**
- * @collboard-modules-sdk
- */
-export class FreehandArt extends Abstract2dArt {
+export class SampleArt extends Abstract2dArt {
     public frames: TouchFrame[];
     public color: string;
+    public fillcolor: string;
     public weight: number;
-    private minX: number;
-    private maxX: number;
-    private minY: number;
-    private maxY: number;
+    private minX: number = 0;
+    private maxX: number = 0;
+    private minY: number = 0;
+    private maxY: number = 0;
 
-    constructor(frames: TouchFrame[], color: string, weight: number) {
-        // TODO: Freehand line style
+    constructor(frames: TouchFrame[], color: string, fillcolor: string, weight: number) {
+        // TODO: Sample line style
         super();
         this.frames = frames;
         this.color = color;
+        this.fillcolor = fillcolor;
         this.weight = weight;
     }
 
@@ -123,7 +111,7 @@ export class FreehandArt extends Abstract2dArt {
                             strokeOpacity="null"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            fill="none"
+                            fill={this.fillcolor}
                             className="collisions"
                         />
                     </g>
@@ -133,6 +121,9 @@ export class FreehandArt extends Abstract2dArt {
     }
 }
 
-/**
- * Note: number is just a file prefix to feep it on the top of file list.
- */
+declareModule(() =>
+    makeArtModule({
+        name: 'Sample',
+        class: SampleArt,
+    }),
+);
