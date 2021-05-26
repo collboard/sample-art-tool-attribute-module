@@ -40,10 +40,38 @@ To turn your class into a module, use [`makeArtModule`](https://collboard.github
 
 **Important:** Please create a prefix for your art module names since they need to be unique across the whole system. If the name is not unique, it may cause confusion and the system may not work correctly!
 
+_See [SampleArt](src/SampleArt.tsx) for a sample art module._
+
 ### Attributes
 
-!!! TODO
+You can imagine attributes as fancy getters and setters for arts. Every `AbstractPlacedArt` holds information about [attributes the specific art supports](https://collboard.github.io/modules-sdk/classes/abstractplacedart.html#acceptedattributes). This list of accepted attributes is used in order to render the floating menu above selection. You can use some internal, premade attributes, such as `color`, line `weight`, `fontSize`, `fontStyle` or `listStyle` as well as create your own.
+
+While the floating menu gets rendered automatically from accepted attributes, a submenu for tools needs to be constructed manualy. You can use `attributesSystem.inputRender('attribute name')` for that purpose.
+
+[Manifest](src/DashpatternAttribute.tsx) for a attribute module takes few basic keys:
+
+-   `attribute` describing the attribute properties, such as
+    -   `name` - unique identifier of a attribute used in [`AbstractPlacedArt.acceptedAttributes`](https://collboard.github.io/modules-sdk/classes/abstractplacedart.html#acceptedattributes) or [`AttributesSystem.inputRender`](https://collboard.github.io/modules-sdk/classes/attributessystem.html#inputrender)
+    -   `type` - value type (one of `string`, `number`, `boolean`, `object`)
+    -   `defaultValue`
+-   `inputRender` containing a function returning JSX.Element with a attribute menu
+
+**Important:** Please create a prefix for your attribute module names since they need to be unique across the whole system. If the name is not unique, it may cause confusion and the system may not work correctly!
+
+_See [DashpatternAttribute](src/DashpatternAttribute.tsx) for a sample attribute module._
 
 ### Tools
 
-!!! TODO
+Tools are modules closest to an average Collboard user. They allow users to interact with a board, create new arts or modify existing ones. Basically all the icons you can see in the toolbar at the bottom of te UI are tools.
+
+In the Collboard sense, you can imagine tools as a module activated by icon - hence the maker name [`makeIconModuleOnModule`](https://collboard.github.io/modules-sdk/modules.html#makeiconmoduleonmodule).
+
+In [manifest](src/SampleTool.tsx), you specify few things:
+
+-   `toolbar` is the place where icons get placed. You can choose from the [toolbars](https://collboard.github.io/modules-sdk/enums/toolbarname.html) already present on Collboard
+-   `icon` can be either static object, or a function taking [systemsContainer](https://collboard.github.io/modules-sdk/interfaces/isystems.html) as an only argument. You specify not only the visuals of the icon, but also a layout of submenu displayed, when icon is selected.
+-   `moduleActivatedByIcon` can be any other module manifest (or a module factory) of the tool itself
+
+We suggest using `touchController` system for capturing user actions on board and taking appropriate actions when the module is active.
+
+_See [SampleTool](src/SampleTool.tsx) for a sample attribute module._
