@@ -116,7 +116,7 @@ export class SampleArt extends Abstract2dArt {
 
 declareModule(() =>
     makeArtModule({
-        name: 'Sample',
+        name: 'collboard_sample_Sample',
         class: SampleArt,
         ...packageJson,
     }),
