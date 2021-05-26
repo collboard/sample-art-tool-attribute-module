@@ -74,4 +74,4 @@ In [manifest](src/SampleTool.tsx), you specify few things:
 
 We suggest using `touchController` system for capturing user actions on board and taking appropriate actions when the module is active.
 
-_See [SampleTool](src/SampleTool.tsx) for a sample attribute module._
+_See [SampleTool](src/SampleTool.tsx) for a sample tool module._
