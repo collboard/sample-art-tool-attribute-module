@@ -1,5 +1,5 @@
 {
-    "version": "10.4.1-1",
+    "version": "10.4.1-2",
     "description": "Simple sample module for Collboard.com created via @collboard/modules-sdk",
     "license": "SEE LICENSE IN LICENSE",
     "contributors": [
@@ -17,6 +17,6 @@
         "publish": "colldev publish"
     },
     "dependencies": {
-        "@collboard/modules-sdk": " 11.2.2-1"
+        "@collboard/modules-sdk": "^11.3.0-5"
     }
 }
