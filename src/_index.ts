@@ -1,3 +1,3 @@
-import './art';
-import './attribute.tsx';
-import './tool';
+import './SampleArt';
+import './DashpatternAttribute.tsx';
+import './SampleTool';
