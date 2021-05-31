@@ -24,7 +24,7 @@ declareModule(
                 /*TODO:*/
             ],
             categories: ['Colors'],
-            // TODO: !!! Authors should be derived from package.json
+            // TODO: !! Authors should be derived from package.json
         },
         standard: true,
         attribute: {

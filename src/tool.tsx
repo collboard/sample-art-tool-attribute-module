@@ -15,8 +15,8 @@ declareModule(
             screenshots: [
                 /*TODO:*/
             ],
-            // TODO: !!! Derive all from package
-            // TODO: !!! Authors should be derived from package.json
+            // TODO: !! Derive all from package
+            // TODO: !! Authors should be derived from package.json
         },
         toolbar: ToolbarName.Tools,
         icon: ({ attributesSystem }) => ({
