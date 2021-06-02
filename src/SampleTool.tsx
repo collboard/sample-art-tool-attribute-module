@@ -1,8 +1,7 @@
 import { declareModule, makeIconModuleOnModule, Registration, Separator, ToolbarName } from '@collboard/modules-sdk';
 import * as React from 'react';
-import { TouchFrame } from 'touchcontroller';
-import { SampleArt } from './SampleArt';
 import packageJson from '../package.json';
+import { SampleArt } from './SampleArt';
 
 declareModule(
     makeIconModuleOnModule({
@@ -14,7 +13,6 @@ declareModule(
         },
         toolbar: ToolbarName.Tools,
         icon: ({ attributesSystem }) => ({
-            autoSelect: true,
             section: 2,
             char: '✒️',
             boardCursor: 'crosshair',
