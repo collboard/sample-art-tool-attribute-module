@@ -30,7 +30,21 @@ declareModule(
             };
         },
         moduleActivatedByIcon: {
-            setup: ({ touchController, appState, attributesSystem, materialArtVersioningSystem, collSpace }) => {
+            async setup(systems) {
+                const {
+                    touchController,
+                    appState,
+                    attributesSystem,
+                    materialArtVersioningSystem,
+                    collSpace,
+                } = await systems.request(
+                    'touchController',
+                    'appState',
+                    'attributesSystem',
+                    'materialArtVersioningSystem',
+                    'collSpace',
+                );
+
                 return Registration.fromSubscription((registerAdditionalSubscription) =>
                     touchController.touches.subscribe({
                         next: (touch) => {
