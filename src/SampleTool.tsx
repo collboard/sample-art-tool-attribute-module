@@ -12,20 +12,23 @@ declareModule(
             ...packageJson,
         },
         toolbar: ToolbarName.Tools,
-        icon: ({ attributesSystem }) => ({
-            section: 2,
-            char: '✒️',
-            boardCursor: 'crosshair',
-            menu: () => (
-                <>
-                    {attributesSystem.inputRender('weight')}
-                    <Separator />
-                    {attributesSystem.inputRender('color')}
-                    <Separator />
-                    {attributesSystem.inputRender('dashpattern')}
-                </>
-            ),
-        }),
+        async icon(systems) {
+            const { attributesSystem } = await systems.request('attributesSystem');
+            return {
+                section: 2,
+                char: '✒️',
+                boardCursor: 'crosshair',
+                menu: () => (
+                    <>
+                        {attributesSystem.inputRender('weight')}
+                        <Separator />
+                        {attributesSystem.inputRender('color')}
+                        <Separator />
+                        {attributesSystem.inputRender('dashpattern')}
+                    </>
+                ),
+            };
+        },
         moduleActivatedByIcon: {
             setup: ({ touchController, appState, attributesSystem, materialArtVersioningSystem, collSpace }) => {
                 return Registration.fromSubscription((registerAdditionalSubscription) =>
