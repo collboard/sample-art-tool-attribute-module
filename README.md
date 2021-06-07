@@ -2,6 +2,17 @@
 
 Simple sample module for [Collboard.com](https://collboard.com/) created via [@collboard/modules-sdk](https://www.npmjs.com/package/@collboard/modules-sdk).
 
+
+
+<a class="github-button" href="https://github.com/collboard/module-sample-objects/generate" data-icon="octicon-repo-template" aria-label="Use this template collboard/module-sample-objects on GitHub">Use this template</a>
+
+[![Use this template](https://raw.githubusercontent.com/collboard/docs/main/buttons/use-this-template.button.png)](https://github.com/collboard/module-sample-objects/generate)
+[![Gitpod ready-to-code](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+
+<!--TODO: Other badges like Use as template, tests, likes, Collboard working, open in Collboard,... + make it visually nicer -->
+
+
+
 To start work, first `npm install` dependencies and then run `colldev` CLI util:
 
 ```bash
