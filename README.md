@@ -2,16 +2,12 @@
 
 Simple sample module for [Collboard.com](https://collboard.com/) created via [@collboard/modules-sdk](https://www.npmjs.com/package/@collboard/modules-sdk).
 
-
-
-<a class="github-button" href="https://github.com/collboard/module-sample-objects/generate" data-icon="octicon-repo-template" aria-label="Use this template collboard/module-sample-objects on GitHub">Use this template</a>
-
 [![Use this template](https://raw.githubusercontent.com/collboard/docs/main/buttons/use-this-template.button.png)](https://github.com/collboard/module-sample-objects/generate)
-[![Gitpod ready-to-code](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
-
-<!--TODO: Other badges like Use as template, tests, likes, Collboard working, open in Collboard,... + make it visually nicer -->
-
-
+[![License](https://img.shields.io/github/license/collboard/module-sample-objects.svg?style=flat)](https://raw.githubusercontent.com/collboard/module-sample-objects/master/LICENSE)
+[![Test](https://github.com/collboard/module-sample-objects/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/module-sample-objects/actions/workflows/test.yml)
+[![Lint](https://github.com/collboard/module-sample-objects/actions/workflows/lint.yml/badge.svg)](https://github.com/collboard/module-sample-objects/actions/workflows/lint.yml)
+[![Known Vulnerabilities](https://snyk.io/test/github/collboard/module-sample-objects/badge.svg)](https://snyk.io/test/github/collboard/module-sample-objects)
+[![Issues](https://img.shields.io/github/issues/collboard/module-sample-objects.svg?style=flat)](https://github.com/collboard/module-sample-objects/issues)
 
 To start work, first `npm install` dependencies and then run `colldev` CLI util:
 
