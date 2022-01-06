@@ -1,7 +1,7 @@
 import { Abstract2dArt, classNames, declareModule, makeArtModule } from '@collboard/modules-sdk';
 import * as React from 'react';
 import { IVector, Vector } from 'xyzt';
-import packageJson from '../package.json';
+import { version } from '../package.json';
 import { DASHPATTERNS } from './DashpatternAttribute';
 
 export const SVG_PADDING = 10;
@@ -116,8 +116,11 @@ export class SampleArt extends Abstract2dArt {
 
 declareModule(() =>
     makeArtModule({
-        name: 'collboard_sample_Sample',
+        name: '@collboard/module-sample-objects/sample-art',
+        version,
         class: SampleArt,
-        ...packageJson,
+        flags: {
+            isTemplate: true,
+        },
     }),
 );

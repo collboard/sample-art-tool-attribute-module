@@ -1,15 +1,18 @@
 import { declareModule, makeIconModuleOnModule, Registration, Separator, ToolbarName } from '@collboard/modules-sdk';
 import * as React from 'react';
-import packageJson from '../package.json';
+ import {version} from '../package.json';
 import { SampleArt } from './SampleArt';
 
 declareModule(
     makeIconModuleOnModule({
         manifest: {
-            name: 'SampleTool',
+            name: '@collboard/module-sample-objects/sample-tool',
+            version,
             title: { en: 'Drawing', cs: 'Kreslení' },
             categories: ['Basic', 'Art'],
-            ...packageJson,
+            flags: {
+                isTemplate: true,
+            },
         },
         toolbar: ToolbarName.Tools,
         async icon(systems) {
@@ -31,19 +34,14 @@ declareModule(
         },
         moduleActivatedByIcon: {
             async setup(systems) {
-                const {
-                    touchController,
-                    appState,
-                    attributesSystem,
-                    materialArtVersioningSystem,
-                    collSpace,
-                } = await systems.request(
-                    'touchController',
-                    'appState',
-                    'attributesSystem',
-                    'materialArtVersioningSystem',
-                    'collSpace',
-                );
+                const { touchController, appState, attributesSystem, materialArtVersioningSystem, collSpace } =
+                    await systems.request(
+                        'touchController',
+                        'appState',
+                        'attributesSystem',
+                        'materialArtVersioningSystem',
+                        'collSpace',
+                    );
 
                 return Registration.fromSubscription((registerAdditionalSubscription) =>
                     touchController.touches.subscribe({

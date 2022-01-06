@@ -1,0 +1,6 @@
+{
+    "entryPath": "./src/00-index.tsx",
+    "develop": {
+        "open": "multiple"
+    }
+}

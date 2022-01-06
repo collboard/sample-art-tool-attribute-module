@@ -1,6 +1,6 @@
 import { declareModule, Icon, IconColor, makeAttributeModule } from '@collboard/modules-sdk';
 import * as React from 'react';
-import packageJson from '../package.json';
+import { version } from '../package.json';
 
 export const DASHPATTERNS: { [key: string]: { char: string; dasharray: number[] } } = {
     solid: { char: '—', dasharray: [] },
@@ -11,8 +11,11 @@ export const DASHPATTERNS: { [key: string]: { char: string; dasharray: number[] 
 declareModule(
     makeAttributeModule<string>({
         manifest: {
-            name: 'DashpatternAttribute',
-            ...packageJson,
+            name: '@collboard/module-sample-objects/sample-art/dashpattern-attribute',
+            version,
+            flags: {
+                isTemplate: true,
+            },
         },
         standard: true,
         attribute: {
