@@ -14,7 +14,7 @@
     "private": false,
     "scripts": {
         "start": "colldev develop",
-        "publish": "colldev publish",
+        "test": "colldev test",
         "lint": "tslint -p tsconfig.json",
         "preversion": "npm run lint && npm test",
         "postversion": "git push && git push --tags"
