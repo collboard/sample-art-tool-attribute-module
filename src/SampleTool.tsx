@@ -1,6 +1,6 @@
 import { declareModule, makeIconModuleOnModule, Registration, Separator, ToolbarName } from '@collboard/modules-sdk';
 import * as React from 'react';
- import {version} from '../package.json';
+import { contributors, description, license, repository, version } from '../package.json';
 import { SampleArt } from './SampleArt';
 
 declareModule(
@@ -8,6 +8,10 @@ declareModule(
         manifest: {
             name: '@collboard/module-sample-objects/sample-tool',
             version,
+            description,
+            contributors,
+            license,
+            repository,
             title: { en: 'Drawing', cs: 'Kreslení' },
             categories: ['Basic', 'Art'],
             flags: {
