@@ -1,5 +1,5 @@
 {
-    "entryPath": "./src/00-index.tsx",
+    "entryPath": "./src/00-index.ts",
     "develop": {
         "open": "multiple"
     }
