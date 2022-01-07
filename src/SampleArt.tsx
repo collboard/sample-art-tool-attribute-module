@@ -1,13 +1,14 @@
 import { Abstract2dArt, classNames, declareModule, makeArtModule } from '@collboard/modules-sdk';
 import * as React from 'react';
 import { IVectorData, Vector } from 'xyzt';
-import { contributors, description, license, repository, version } from '../package.json';
 import { DASHPATTERNS } from './DashpatternAttribute';
 
 export const SVG_PADDING = 10;
 export const IS_NEAR_DISTANCE = 20;
 
 export class SampleArt extends Abstract2dArt {
+    public static serializeName = '@collboard/module-sample-objects/sample-art';
+
     private minX: number = 0;
     private maxX: number = 0;
     private minY: number = 0;
@@ -31,7 +32,7 @@ export class SampleArt extends Abstract2dArt {
     public get size() {
         return this.bottomRightCorner.subtract(this.topLeftCorner);
     }
-    public set size(newSize: IVectorData) {
+    public set size(newSize: Vector) {
         try {
             const scaleX = (newSize.x || 0) / (this.maxX - this.minX);
             const scaleY = (newSize.y || 0) / (this.maxY - this.minY);
@@ -114,17 +115,4 @@ export class SampleArt extends Abstract2dArt {
     }
 }
 
-declareModule(() =>
-    makeArtModule({
-        name: '@collboard/module-sample-objects/sample-art',
-        version,
-        description,
-        contributors,
-        license,
-        repository,
-        class: SampleArt,
-        flags: {
-            isTemplate: true,
-        },
-    }),
-);
+declareModule(makeArtModule(SampleArt));

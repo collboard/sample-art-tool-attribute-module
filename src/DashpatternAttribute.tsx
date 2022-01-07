@@ -1,4 +1,4 @@
-import { declareModule, Icon, IconColor, makeAttributeModule } from '@collboard/modules-sdk';
+import { declareModule, Icon, makeAttributeModule } from '@collboard/modules-sdk';
 import * as React from 'react';
 import { contributors, description, license, repository, version } from '../package.json';
 
