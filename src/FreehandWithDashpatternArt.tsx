@@ -1,6 +1,7 @@
 import { Abstract2dArt, classNames, declareModule, makeArtModule } from '@collboard/modules-sdk';
 import * as React from 'react';
 import { IVectorData, Vector } from 'xyzt';
+import { version } from '../package.json';
 import { DASHPATTERNS } from './DashpatternAttribute';
 
 export const SVG_PADDING = 10;
@@ -8,6 +9,7 @@ export const IS_NEAR_DISTANCE = 20;
 
 export class FreehandWithDashpatternArt extends Abstract2dArt {
     public static serializeName = '@collboard/freehand-with-dashpattern-art';
+    public static version = version;
 
     private minX: number = 0;
     private maxX: number = 0;
