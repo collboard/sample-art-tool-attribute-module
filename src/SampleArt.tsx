@@ -1,6 +1,6 @@
 import { Abstract2dArt, classNames, declareModule, makeArtModule } from '@collboard/modules-sdk';
 import * as React from 'react';
-import { IVector, Vector } from 'xyzt';
+import { IVectorData, Vector } from 'xyzt';
 import { contributors, description, license, repository, version } from '../package.json';
 import { DASHPATTERNS } from './DashpatternAttribute';
 
@@ -14,7 +14,7 @@ export class SampleArt extends Abstract2dArt {
     private maxY: number = 0;
 
     public constructor(
-        public path: IVector[],
+        public path: IVectorData[],
         public color: string,
         public dashpattern: string,
         public weight: number,
@@ -31,7 +31,7 @@ export class SampleArt extends Abstract2dArt {
     public get size() {
         return this.bottomRightCorner.subtract(this.topLeftCorner);
     }
-    public set size(newSize: IVector) {
+    public set size(newSize: IVectorData) {
         try {
             const scaleX = (newSize.x || 0) / (this.maxX - this.minX);
             const scaleY = (newSize.y || 0) / (this.maxY - this.minY);
@@ -46,7 +46,7 @@ export class SampleArt extends Abstract2dArt {
         }
     }
 
-    public isNear(point2: IVector) {
+    public isNear(point2: IVectorData) {
         return (
             this.path.filter((point) => Vector.add(point, this.shift).distance(point2) <= IS_NEAR_DISTANCE).length > 0
         );
