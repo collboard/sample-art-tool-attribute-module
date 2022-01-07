@@ -6,8 +6,8 @@ import { DASHPATTERNS } from './DashpatternAttribute';
 export const SVG_PADDING = 10;
 export const IS_NEAR_DISTANCE = 20;
 
-export class SampleArt extends Abstract2dArt {
-    public static serializeName = '@collboard/module-sample-objects/sample-art';
+export class FreehandWithDashpatternArt extends Abstract2dArt {
+    public static serializeName = '@collboard/freehand-with-dashpattern-art';
 
     private minX: number = 0;
     private maxX: number = 0;
@@ -115,4 +115,4 @@ export class SampleArt extends Abstract2dArt {
     }
 }
 
-declareModule(makeArtModule(SampleArt));
+declareModule(makeArtModule(FreehandWithDashpatternArt));

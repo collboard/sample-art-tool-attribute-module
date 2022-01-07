@@ -3,12 +3,12 @@ import { declareModule, makeIconModuleOnModule, Separator, ToolbarName } from '@
 import { Registration } from 'destroyable';
 import * as React from 'react';
 import { contributors, description, license, repository, version } from '../package.json';
-import { SampleArt } from './SampleArt';
+import { FreehandWithDashpatternArt } from './FreehandWithDashpatternArt';
 
 declareModule(
     makeIconModuleOnModule({
         manifest: {
-            name: '@collboard/module-sample-objects/sample-tool',
+            name: '@collboard/freehand-with-dashpattern-tool',
             version,
             description,
             contributors,
@@ -55,7 +55,8 @@ declareModule(
                         next: (touch) => {
                             appState.cancelSelection();
 
-                            const artInProcess = new SampleArt(
+                            // TODO: On dashpattern = solid make classical freehand art (and figure out how to import it here).
+                            const artInProcess = new FreehandWithDashpatternArt(
                                 [],
                                 attributesSystem.getAttributeValue('color') as string,
                                 attributesSystem.getAttributeValue('dashpattern') as string,
