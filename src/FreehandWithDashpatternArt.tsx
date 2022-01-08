@@ -8,7 +8,10 @@ export const SVG_PADDING = 10;
 export const IS_NEAR_DISTANCE = 20;
 
 export class FreehandWithDashpatternArt extends Abstract2dArt {
-    public static serializeName = '@collboard/freehand-with-dashpattern-art';
+
+    // TODO: Some clear rules how to name serializeName and module names (+ adding scopes and versions there)
+    // TODO: How to handle versioning in arts?
+    public static serializeName = 'FreehandWithDashpattern';
     public static version = version;
 
     private minX: number = 0;
