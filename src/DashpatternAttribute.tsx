@@ -25,7 +25,7 @@ declareModule(
         attribute: {
             type: 'string',
             name: 'dashpattern',
-            defaultValue: 'solid',
+            defaultValue: 'dotted',
         },
         inputRender: (value: string, onChange: (value: string) => void) => (
             <>
