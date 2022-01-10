@@ -5,6 +5,7 @@ import * as React from 'react';
 import { contributors, description, license, repository, version } from '../package.json';
 import { FreehandWithDashpatternArt } from './FreehandWithDashpatternArt';
 
+
 declareModule(
     makeIconModuleOnModule({
         manifest: {
