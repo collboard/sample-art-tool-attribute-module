@@ -1,4 +1,4 @@
-# Sample of Collboard module with tool, art _(object on the board)_, and attributes
+# 📘 Sample of Collboard module with the tool, art _(object on the board)_, and attributes
 
 Simple sample module for [Collboard.com](https://collboard.com/) created via [@collboard/modules-sdk](https://www.npmjs.com/package/@collboard/modules-sdk).
 
