@@ -1,6 +1,6 @@
 {
     "name": "@collboard/module-sample-objects",
-    "version": "0.2.5",
+    "version": "0.2.6",
     "description": "Sample of tool+arts module for Collboard.com created via @collboard/modules-sdk",
     "license": "SEE LICENSE IN LICENSE",
     "contributors": [
