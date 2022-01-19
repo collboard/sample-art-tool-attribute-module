@@ -1,5 +1,4 @@
-import { declareModule, Icon, makeAttributeModule } from '@collboard/modules-sdk';
-import * as React from 'react';
+import { declareModule, Icon, makeAttributeModule, React } from '@collboard/modules-sdk';
 import { contributors, description, license, repository, version } from '../package.json';
 
 export const DASHPATTERNS: { [key: string]: { char: string; dasharray: number[] } } = {
