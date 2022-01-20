@@ -1,14 +1,16 @@
-# 📘 Sample of Collboard module with the tool, art _(object on the board)_, and attributes
+# 📘 Sample of Collboard module with the art _(object on the board)_, tool, and attribute
 
 Simple sample module for [Collboard.com](https://collboard.com/) created via [@collboard/modules-sdk](https://www.npmjs.com/package/@collboard/modules-sdk).
 
 <!--Badges-->
-[![Use this template](https://raw.githubusercontent.com/collboard/docs/main/buttons/use-this-template.button.png)](https://github.com/collboard/module-sample-objects/generate)
-[![License](https://img.shields.io/github/license/collboard/module-sample-objects.svg?style=flat)](https://raw.githubusercontent.com/collboard/module-sample-objects/master/LICENSE)
-[![Test](https://github.com/collboard/module-sample-objects/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/module-sample-objects/actions/workflows/test.yml)
-[![Lint](https://github.com/collboard/module-sample-objects/actions/workflows/lint.yml/badge.svg)](https://github.com/collboard/module-sample-objects/actions/workflows/lint.yml)
-[![Known Vulnerabilities](https://snyk.io/test/github/collboard/module-sample-objects/badge.svg)](https://snyk.io/test/github/collboard/module-sample-objects)
-[![Issues](https://img.shields.io/github/issues/collboard/module-sample-objects.svg?style=flat)](https://github.com/collboard/module-sample-objects/issues)
+
+[![Use this template](https://raw.githubusercontent.com/collboard/docs/main/buttons/use-this-template.button.png)](https://github.com/collboard/art-tool-attribute-module/generate)
+[![License](https://img.shields.io/github/license/collboard/art-tool-attribute-module.svg?style=flat)](https://raw.githubusercontent.com/collboard/art-tool-attribute-module/master/LICENSE)
+[![Test](https://github.com/collboard/art-tool-attribute-module/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/art-tool-attribute-module/actions/workflows/test.yml)
+[![Lint](https://github.com/collboard/art-tool-attribute-module/actions/workflows/lint.yml/badge.svg)](https://github.com/collboard/art-tool-attribute-module/actions/workflows/lint.yml)
+[![Known Vulnerabilities](https://snyk.io/test/github/collboard/art-tool-attribute-module/badge.svg)](https://snyk.io/test/github/collboard/art-tool-attribute-module)
+[![Issues](https://img.shields.io/github/issues/collboard/art-tool-attribute-module.svg?style=flat)](https://github.com/collboard/art-tool-attribute-module/issues)
+
 <!--TODO: Make badge from module store with published version + maybe some stats like count of installations etc.-->
 <!--/Badges-->
 
@@ -16,7 +18,7 @@ Simple sample module for [Collboard.com](https://collboard.com/) created via [@c
 
 1. **Clone** this repository
 2. **Install** NPM dependencies
-3. Change `@collboard/module-sample-objects` to your module name and scope
+3. Change `@collboard/art-tool-attribute-module` to your module name and scope
 4. Start developing!
 
 ```bash
