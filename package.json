@@ -20,7 +20,7 @@
         "postversion": "git push && git push --tags"
     },
     "devDependencies": {
-        "@collboard/modules-sdk": "18.12.103",
+        "@collboard/modules-sdk": "18.13.0",
         "tslint": "^6.1.3"
     },
     "dependencies": {
