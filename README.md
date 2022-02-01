@@ -5,9 +5,8 @@ Simple sample module for [Collboard.com](https://collboard.com/) created via [@c
 <!--Badges-->
 
  [![License](https://img.shields.io/github/license/collboard/art-tool-attribute-module.svg?style=flat)](https://raw.githubusercontent.com/collboard/art-tool-attribute-module/master/LICENSE)
- [![NPM Version](https://badge.fury.io/js/@collboard%2Fart-tool-attribute-module.svg)](https://www.npmjs.com/package/@collboard/art-tool-attribute-module)
- [![undefined](https://github.com/collboard/art-tool-attribute-module/actions/workflows/lint/badge.svg)](https://github.com/collboard/art-tool-attribute-module/actions/workflows/lint.yml)
- [![undefined](https://github.com/collboard/art-tool-attribute-module/actions/workflows/test/badge.svg)](https://github.com/collboard/art-tool-attribute-module/actions/workflows/test.yml)
+ [![lint](https://github.com/collboard/art-tool-attribute-module/actions/workflows/lint.yml/badge.svg)](https://github.com/collboard/art-tool-attribute-module/actions/workflows/lint.yml)
+ [![test](https://github.com/collboard/art-tool-attribute-module/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/art-tool-attribute-module/actions/workflows/test.yml)
  [![Known Vulnerabilities](https://snyk.io/test/github/collboard/art-tool-attribute-module/badge.svg)](https://snyk.io/test/github/collboard/art-tool-attribute-module)
  [![Issues](https://img.shields.io/github/issues/collboard/art-tool-attribute-module.svg?style=flat)](https://github.com/collboard/art-tool-attribute-module/issues)
 
