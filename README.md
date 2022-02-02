@@ -4,11 +4,11 @@ Simple sample module for [Collboard.com](https://collboard.com/) created via [@c
 
 <!--Badges-->
 
- [![License of 📘 Sample of Collboard module with the art _(object on the board)_, tool, and attribute](https://img.shields.io/github/license/collboard/art-tool-attribute-module.svg?style=flat)](https://github.com/collboard/art-tool-attribute-module/blob/main/LICENSE)
- [![lint](https://github.com/collboard/art-tool-attribute-module/actions/workflows/lint.yml/badge.svg)](https://github.com/collboard/art-tool-attribute-module/actions/workflows/lint.yml)
- [![test](https://github.com/collboard/art-tool-attribute-module/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/art-tool-attribute-module/actions/workflows/test.yml)
- [![Known Vulnerabilities](https://snyk.io/test/github/collboard/art-tool-attribute-module/badge.svg)](https://snyk.io/test/github/collboard/art-tool-attribute-module)
- [![Issues](https://img.shields.io/github/issues/collboard/art-tool-attribute-module.svg?style=flat)](https://github.com/collboard/art-tool-attribute-module/issues)
+[![License of 📘 Sample of Collboard module with the art _(object on the board)_, tool, and attribute](https://img.shields.io/github/license/collboard/art-tool-attribute-module.svg?style=flat)](https://github.com/collboard/art-tool-attribute-module/blob/main/LICENSE)
+[![lint](https://github.com/collboard/art-tool-attribute-module/actions/workflows/lint.yml/badge.svg)](https://github.com/collboard/art-tool-attribute-module/actions/workflows/lint.yml)
+[![test](https://github.com/collboard/art-tool-attribute-module/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/art-tool-attribute-module/actions/workflows/test.yml)
+[![Known Vulnerabilities](https://snyk.io/test/github/collboard/art-tool-attribute-module/badge.svg)](https://snyk.io/test/github/collboard/art-tool-attribute-module)
+[![Issues](https://img.shields.io/github/issues/collboard/art-tool-attribute-module.svg?style=flat)](https://github.com/collboard/art-tool-attribute-module/issues)
 
 <!--/Badges-->
 
