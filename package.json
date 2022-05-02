@@ -1,6 +1,6 @@
 {
     "name": "@collboard/art-tool-attribute-module",
-    "version": "0.2.48",
+    "version": "0.2.49",
     "description": "Simple sample module for Collboard.com created via @collboard/modules-sdk.",
     "license": "SEE LICENSE IN LICENSE",
     "contributors": [
