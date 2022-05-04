@@ -7,7 +7,7 @@ import { FreehandWithDashpatternArt } from './FreehandWithDashpatternArt';
 declareModule(
     makeIconModuleOnModule({
         manifest: {
-            name: '@collboard/freehand-with-dashpattern-tool',
+            name: '@collboard-templates/freehand-with-dashpattern-tool',
             version,
             description,
             contributors,
