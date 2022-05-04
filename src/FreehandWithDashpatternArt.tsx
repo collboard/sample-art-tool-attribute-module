@@ -11,7 +11,7 @@ export class FreehandWithDashpatternArt extends Abstract2dArt {
     // TODO: How to handle versioning in arts?
     public static serializeName = 'FreehandWithDashpattern';
     public static manifest = {
-        name: '@collboard/freehand-with-dashpattern-art',
+        name: '@collboard-templates/freehand-with-dashpattern-art',
         contributors,
         description,
         license,
