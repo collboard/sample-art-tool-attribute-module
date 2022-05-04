@@ -25,7 +25,7 @@ declareModule(
             const { attributesSystem } = await systems.request('attributesSystem');
             return {
                 section: 2,
-                char: '✒️',
+                icon: '✒️',
                 boardCursor: 'crosshair',
                 menu: () => (
                     <>
