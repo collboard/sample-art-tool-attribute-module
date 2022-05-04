@@ -10,7 +10,7 @@ export const DASHPATTERNS: { [key: string]: { char: string; dasharray: number[] 
 declareModule(
     makeAttributeModule<string>({
         manifest: {
-            name: '@collboard/dashpattern-attribute',
+            name: '@collboard-templates/dashpattern-attribute',
             version,
             description,
             contributors,
