@@ -18,7 +18,7 @@ Simple sample module for [Collboard.com](https://collboard.com/) created via [@c
 
 1. **Clone** this repository
 2. **Install** NPM dependencies
-3. Change `@collboard/art-tool-attribute-module` to your module name and scope _(In VSCode, use `Ctrl+Shift+H` to trigger search&replace)_
+3. Change `@collboard-templates/` to your module name and scope _(In VSCode, use `Ctrl+Shift+H` to trigger search&replace)_
 4. Start developing!
 
 ```bash
