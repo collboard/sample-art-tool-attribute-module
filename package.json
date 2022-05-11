@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/collboard/sample-art-tool-attribute-module"
+    "url": "https://github.com/collboard/art-tool-attribute-module"
   },
   "private": false,
   "scripts": {
