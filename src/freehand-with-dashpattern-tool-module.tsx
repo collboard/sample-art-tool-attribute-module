@@ -2,7 +2,7 @@
 import { declareModule, makeIconModuleOnModule, React, Separator, ToolbarName } from '@collboard/modules-sdk';
 import { Registration } from 'destroyable';
 import { contributors, description, license, repository, version } from '../package.json';
-import { FreehandWithDashpatternArt } from './FreehandWithDashpatternArt';
+import { FreehandWithDashpatternArt } from './freehand-with-dashpattern-art-module';
 
 declareModule(
     makeIconModuleOnModule({
@@ -27,15 +27,17 @@ declareModule(
                 section: 2,
                 icon: '✒️',
                 boardCursor: 'crosshair',
-                menu: () => (
-                    <>
-                        {attributesSystem.inputRender('weight')}
-                        <Separator />
-                        {attributesSystem.inputRender('color')}
-                        <Separator />
-                        {attributesSystem.inputRender('dashpattern')}
-                    </>
-                ),
+                menu() {
+                    return (
+                        <>
+                            {attributesSystem.inputRender('weight')}
+                            <Separator />
+                            {attributesSystem.inputRender('color')}
+                            <Separator />
+                            {attributesSystem.inputRender('dashpattern')}
+                        </>
+                    );
+                },
             };
         },
         moduleActivatedByIcon: {
@@ -51,7 +53,7 @@ declareModule(
 
                 return Registration.fromSubscription((registerAdditionalSubscription) =>
                     touchController.touches.subscribe({
-                        next: (touch) => {
+                        next(touch) {
                             appState.cancelSelection();
 
                             // TODO: On dashpattern = solid make classical freehand art (and figure out how to import it here).

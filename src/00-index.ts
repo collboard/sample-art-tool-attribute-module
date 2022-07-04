@@ -1,3 +1,3 @@
-import './DashpatternAttribute.tsx';
-import './FreehandWithDashpatternArt';
-import './FreehandWithDashpatternTool';
+import './dashpattern-attribute-module.tsx';
+import './freehand-with-dashpattern-art-module';
+import './freehand-with-dashpattern-tool-module';

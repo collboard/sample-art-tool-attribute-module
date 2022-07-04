@@ -1,7 +1,7 @@
 import { Abstract2dArt, classNames, declareModule, makeArtModule, React } from '@collboard/modules-sdk';
 import { IVectorData, Vector } from 'xyzt';
 import { contributors, description, license, repository, version } from '../package.json';
-import { DASHPATTERNS } from './DashpatternAttribute';
+import { DASHPATTERNS } from './dashpattern-attribute-module';
 
 export const SVG_PADDING = 10;
 export const IS_NEAR_DISTANCE = 20;

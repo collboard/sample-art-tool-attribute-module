@@ -29,12 +29,14 @@ declareModule(
             name: 'dashpattern',
             defaultValue: 'dotted',
         },
-        inputRender: (value: string, onChange: (value: string) => void) => (
-            <>
-                {Object.entries(DASHPATTERNS).map(([key, { icon }]) => (
-                    <Icon {...{ key, icon }} active={value === key} onClick={() => onChange(key)} />
-                ))}
-            </>
-        ),
+        inputRender(value: string, onChange: (value: string) => void) {
+            return (
+                <>
+                    {Object.entries(DASHPATTERNS).map(([key, { icon }]) => (
+                        <Icon {...{ key, icon }} active={value === key} onClick={() => onChange(key)} />
+                    ))}
+                </>
+            );
+        },
     }),
 );
