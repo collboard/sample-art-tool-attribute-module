@@ -11,7 +11,7 @@ export const DASHPATTERNS: { [key: string]: { icon: string_url_image; dasharray:
 };
 
 declareModule(
-    makeAttributeModule<string>({
+    makeAttributeModule({
         manifest: {
             name: '@collboard-templates/dashpattern-attribute',
             version,
