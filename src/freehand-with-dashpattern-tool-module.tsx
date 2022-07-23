@@ -59,9 +59,9 @@ declareModule(
                             // TODO: On dashpattern = solid make classical freehand art (and figure out how to import it here).
                             const artInProcess = new FreehandWithDashpatternArt(
                                 [],
-                                attributesSystem.getAttributeValue('color') as string,
-                                attributesSystem.getAttributeValue('dashpattern') as string,
-                                attributesSystem.getAttributeValue('weight') as number,
+                                attributesSystem.getAttributeValue('color').value as string,
+                                attributesSystem.getAttributeValue('dashpattern').value as string,
+                                attributesSystem.getAttributeValue('weight').value as number,
                             );
 
                             const operation = materialArtVersioningSystem.createPrimaryOperation();
