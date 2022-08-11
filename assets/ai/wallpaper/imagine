@@ -1,5 +1,5 @@
 Simple sample module for virtual online whiteboard with the art (object on the board), tool, and attribute
 --aspect 2:1  --quality 2 --stylize 1250 --version 3
---seed 5366880
+--seed 4519816
 
 Note: All lines bellow (including this) are ignored.
