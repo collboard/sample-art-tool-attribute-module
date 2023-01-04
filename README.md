@@ -14,10 +14,10 @@ Simple sample module for [Collboard.com](https://collboard.com/) with the art _(
 
 
 [![License of 📘 Sample Collboard module](https://img.shields.io/github/license/collboard/sample-art-tool-attribute-module.svg?style=flat)](https://github.com/collboard/sample-art-tool-attribute-module/blob/main/LICENSE)
+[![lint](https://github.com/collboard/sample-art-tool-attribute-module/actions/workflows/lint.yml/badge.svg)](https://github.com/collboard/sample-art-tool-attribute-module/actions/workflows/lint.yml)
+[![test](https://github.com/collboard/sample-art-tool-attribute-module/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/sample-art-tool-attribute-module/actions/workflows/test.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/collboard/sample-art-tool-attribute-module/badge.svg)](https://snyk.io/test/github/collboard/sample-art-tool-attribute-module)
 [![Issues](https://img.shields.io/github/issues/collboard/sample-art-tool-attribute-module.svg?style=flat)](https://github.com/collboard/sample-art-tool-attribute-module/issues)
-<!--[![lint](https://github.com/collboard/sample-art-tool-attribute-module/actions/workflows/lint.yml/badge.svg)](https://github.com/collboard/sample-art-tool-attribute-module/actions/workflows/lint.yml)-->
-<!--[![test](https://github.com/collboard/sample-art-tool-attribute-module/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/sample-art-tool-attribute-module/actions/workflows/test.yml)-->
 
 <!--/Badges-->
 
