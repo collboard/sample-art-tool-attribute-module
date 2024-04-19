@@ -18,6 +18,7 @@ Simple sample module for [Collboard.com](https://collboard.com/) with the art _(
 [![test](https://github.com/collboard/sample-art-tool-attribute-module/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/sample-art-tool-attribute-module/actions/workflows/test.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/collboard/sample-art-tool-attribute-module/badge.svg)](https://snyk.io/test/github/collboard/sample-art-tool-attribute-module)
 [![Issues](https://img.shields.io/github/issues/collboard/sample-art-tool-attribute-module.svg?style=flat)](https://github.com/collboard/sample-art-tool-attribute-module/issues)
+<!--[![Socket](https://socket.dev/api/badge/npm/package/@collboard-templates/sample-art-tool-attribute-module)](https://socket.dev/npm/package/@collboard-templates/sample-art-tool-attribute-module)-->
 
 <!--/Badges-->
 
