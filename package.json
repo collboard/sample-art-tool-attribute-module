@@ -2,7 +2,7 @@
     "name": "@collboard-templates/sample-art-tool-attribute-module",
     "version": "0.3.297",
     "description": "Simple sample module for Collboard.com with the art (object on the board), tool, and attribute",
-    "license": "SEE LICENSE IN LICENSE",
+    "license": "Apache-2.0",
     "contributors": [
         "Pavol Hejný <pavol.hejny@collboard.com> (https://collboard.com/-/about/team)",
         "Jonáš Rosecký <jonas.rosecky@collboard.com> (https://collboard.com/-/about/team)"
