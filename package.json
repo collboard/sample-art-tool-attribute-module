@@ -1,6 +1,6 @@
 {
     "name": "@collboard-templates/sample-art-tool-attribute-module",
-    "version": "0.3.397",
+    "version": "0.3.398",
     "description": "Simple sample module for Collboard.com with the art (object on the board), tool, and attribute",
     "license": "Apache-2.0",
     "contributors": [
